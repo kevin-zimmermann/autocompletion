@@ -34,12 +34,6 @@ abstract class AbstractController extends Controller
      */
     protected function preDispatchType($action, ParameterBag $params)
     {
-        $visitor = BaseApp::visitor();
-        if($visitor->user_id)
-        {
-            $visitor->last_activity = BaseApp::time();
-            $visitor->save();
-        }
         return $this->preDispatchController($action, $params);
     }
     protected function preDispatchController($action, ParameterBag $params)

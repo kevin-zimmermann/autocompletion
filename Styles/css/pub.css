@@ -16,6 +16,7 @@ a{
 @font-face{font-family:'FiraSans';src:url('../font/FiraSans-Medium.otf');font-weight:bold}
 @font-face{font-family:'FiraSans';src:url('../font/FiraSans-Italic.otf');font-weight:normal;font-style:italic}
 @font-face{font-family:'FiraSans';src:url('../font/FiraSans-UltraLight.otf');font-weight:300}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 a:hover{
     opacity: 0.8;
@@ -28,7 +29,8 @@ html, body {
     min-height: 100vh;
     font: 15px / 1.4 sans-serif;
     font-family: 'FiraSans', "Trebuchet MS", Helvetica, sans-serif;
-    background-color: #F7FAFB;
+    background-color: #dbe0e7;
+    overflow-x: hidden;
 }
 
 /*header*/
@@ -507,6 +509,90 @@ main{
 .print-message-content-inner:hover .room-action-message-inner{
     opacity: 1 ;
 }
+.block{
+    display: flex;
+    margin: 100px;
+
+}
+.logo{
+    display: inline-flex;
+    max-width: 500px;
+    margin: auto;
+}
+
+.logo p {
+    font-family: 'Poppins', sans-serif;
+    justify-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    font-size: 60px;
+}
+.logo img{
+    height: 200px;
+}
+.r6-search{
+    max-width: 1400px;
+    margin: auto;
+}
+form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 500px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #07051a;
+    color: white;
+}
 
 /*formRow*/
 .block-formRow-inner{
@@ -961,4 +1047,22 @@ footer .footer-bottom{
         width: auto;
         display: block;
     }
+}
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #myVideo {
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 1560px) {
+    .video-content {
+        display: none;
+    }
+
 }

@@ -5,10 +5,10 @@ $config['db'] = [
     'port' => '3306',
     'username' => 'root',
     'password' => '',
-    'dbname' => 'ld',
+    'dbname' => 'autocompletion',
 ];
 $config['option']['useFriendlyUrls'] = true;
-$config['option']['defaultNameSite'] = 'Nyan Chat';
+$config['option']['defaultNameSite'] = 'R6';
 $config['option']['timeZone'] = 'Europe/Paris';
 $config['option']['debug'] = true;
 $config['option']['SessionUserId'] = 'user_id';
