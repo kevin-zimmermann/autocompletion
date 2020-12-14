@@ -7,8 +7,8 @@
     </div>
 </div>
 <div class="r6-search">
-    <form action="">
-        <input type="search">
-        <i class="fa fa-search"></i>
-    </form>
+    <div class="search-input">
+        <input type="text" id="recipient" class="input" name="recipient" data-auto-url="/pub/autocompletion//user"
+               data-entity="App:Operators" data-search="operator"> <i class="fa fa-search"></i>
+    </div>
 </div>

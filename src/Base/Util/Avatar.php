@@ -118,18 +118,15 @@ class Avatar
         ];
         return self::$avatarDefaultStylingCache[$username];
     }
-    public static function getAvatar($username, $userId, $size = "s")
+    public static function getAvatar($Id, $size = "s")
     {
-        $colorArray = self::getColorAvatarStyle($username) ;
-        $background = 'rgb(' . $colorArray['background']['r'] . ',' . $colorArray['background']['g'] . ',' . $colorArray['background']['b'] . ')';
-        $color = 'rgb(' . $colorArray['color']['r'] . ',' . $colorArray['color']['g'] . ',' . $colorArray['color']['b'] . ')';
         $renderLogo = "<span class=\"avatar-u2-s\">$username[0]</span>";
-        if(file_exists('data/avatar/' . $userId . '.jpg'))
+        if(file_exists('data/r6/' . $Id . '.jpg'))
         {
-            $renderLogo = "<img src=\"" .  \Base\BaseApp::getBaseLink() . "data/avatar/" . $userId  .".jpg\" alt=\"" . $username . "\">";
+            $renderLogo = "<img src=\"" .  \Base\BaseApp::getBaseLink() . "data/avatar/" . $Id  .".jpg\" alt=\"" . $Id . "\">";
         }
         return "<span class=\"avatarWrapper\">
-                    <span class=\"avatar avatar--$size avatar--default\" data-user-id=\"$userId\"
+                    <span class=\"avatar avatar--$size avatar--default\" data-user-id=\"$Id\"
                                   style=\"background-color:$background; color: $color\">
                                   $renderLogo
 		                </span>

@@ -580,16 +580,16 @@ input{
     transition: all 1s;
 }
 
-form:hover{
+.search-input:hover{
     width: 500px;
     cursor: pointer;
 }
 
-form:hover input{
+.search-input:hover input{
     display: block;
 }
 
-form:hover .fa{
+.search-input:hover .fa{
     background: #07051a;
     color: white;
 }
