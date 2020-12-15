@@ -60,6 +60,15 @@ class App
                         'RouteFormat' => null,
                     ]
                 ],
+                'operator' =>[
+                    '' => [
+                        'controller' => 'App:Operator',
+                        'context' => 'operator',
+                        'title' => '<!--TITLE-->',
+                        'description' => true,
+                        'RouteFormat' => ':int<id>/'
+                    ]
+                ]
             ]
         ];
     }

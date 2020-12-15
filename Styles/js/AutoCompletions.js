@@ -24,7 +24,7 @@ class AutoCompletions {
                     dataType : 'json',
                     success : function (data) {
                         $('#' + self.id).autocomplete({
-                            delay: 0,
+                            delay: 100,
                             minLength: 2,
                             matchContains: true,
                             source: function(request, response) {
@@ -36,15 +36,20 @@ class AutoCompletions {
                                     }
                                     return {
                                         returnHtml : returnHtml,
-                                        value : dataItem.title
+                                        value : dataItem.title,
+                                        link : (dataItem.link ? dataItem.link : ''),
                                     }
                                 }) );
                             },
+                            select: function (event, ui){
+                                if (ui.item.link){
+                                    window.location = ui.item.link;
+                                }
+                            }
                         }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
                             console.log(ul)
                             return $('<li>').data( "ui-autocomplete-item", item ).append('<div class="ui-content-auto">' + item.returnHtml + item.label + '</div>').appendTo(ul);
                         };
-
                     },
                     error: function(errorThrown){console.log(errorThrown.responseText)}
                 })

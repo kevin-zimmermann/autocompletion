@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 08 déc. 2020 à 22:11
+-- Généré le :  mar. 15 déc. 2020 à 15:46
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.4.0
 
@@ -63,12 +63,12 @@ INSERT INTO `operators` (`id`, `operator_name`, `side`, `operation_reveal`) VALU
 (19, 'IQ', 'att', 'pionniers'),
 (20, 'Jäger', 'def', 'pionniers'),
 (21, 'Bandit', 'def', 'pionniers'),
-(22, 'Buck', 'att', 'Operation Burnt Horizon '),
-(23, 'Frost', 'def\r\n', 'Operation Burnt Horizon '),
-(24, 'Blackbeard', 'att', 'Operation Burnt Horizon '),
-(25, 'Valkyrie', 'def', 'Operation Burnt Horizon '),
-(26, 'Capitão', 'att', 'Operation Phantom Sight'),
-(27, 'Caveira', 'def', 'Operation Phantom Sight'),
+(22, 'Buck', 'att', 'Operation Black Ice'),
+(23, 'Frost', 'def\r\n', 'Operation Black Ice'),
+(24, 'Blackbeard', 'att', 'Operation Dust Line'),
+(25, 'Valkyrie', 'def', 'Operation Dust Line'),
+(26, 'Capitão', 'att', 'Operation Skull Rain'),
+(27, 'Caveira', 'def', 'Operation Skull Rain'),
 (28, 'Hibana\r\n', 'att', 'Operation Red Crow'),
 (29, 'Echo', 'def', 'Operation Red Crow'),
 (30, 'Jackal', 'att', 'Operation Velvet Shell'),
